@@ -39,19 +39,33 @@ body {
 
 .actions {
     position: absolute;
-    right: 0;
+    right: 0px;
     top: 0;
     display: flex;
     flex-direction: column;
 }
 .actions>button{
     margin: 10px;
-    background: #ddd;
     padding: 8px 10px;
     border: none;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff5bb0), color-stop(1, #ef027d) );
+	background-color:#ff5bb0;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #ee1eb5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	width:80px;
 }
 .actions>button.active{
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.5);
 }
 .actions>button:focus{
     outline: none;
